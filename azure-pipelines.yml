@@ -32,3 +32,12 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Subscription'
+    azureResourceManagerConnection: 'Subskrypcja programu Visual Studio Professional(72b86cc1-b51d-4732-a71d-f384f4c38536)'
+    subscriptionId: '72b86cc1-b51d-4732-a71d-f384f4c38536'
+    location: 'North Europe'
+    templateLocation: 'URL of the file'
+    csmFileLink: '/azure/storage/template.json'
+    deploymentMode: 'Incremental'
