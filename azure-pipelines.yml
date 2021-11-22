@@ -39,6 +39,6 @@ steps:
     subscriptionId: '72b86cc1-b51d-4732-a71d-f384f4c38536'
     location: 'North Europe'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://github.com/matizaj/azuredeploy/blob/master/azure/storage/template.json'
+    csmFileLink: '$(System.DefaultWorkingDirectory)/azure/storage/template.json'
     deploymentMode: 'Incremental'
 
